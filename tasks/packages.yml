@@ -1,6 +1,7 @@
 ---
 - name: include packages.yml vars
   include_vars: packages.yml
+  tags: packages
 
 - name: ensure install common packages
   dnf:
