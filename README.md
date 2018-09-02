@@ -1,5 +1,7 @@
-Role Name
+ansible-role-fedora-base
 =========
+
+[![Build Status](https://travis-ci.org/lborguetti/ansible-role-fedora-base.svg?branch=master)](https://travis-ci.org/lborguetti/ansible-role-fedora-base)
 
 This role install the common packages I used by Fedora bootstrap.
 
