@@ -28,3 +28,4 @@ packages_common:
   - strace
   - sysstat
   - tcpdump
+  - tig
