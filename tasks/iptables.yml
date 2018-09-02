@@ -1,0 +1,42 @@
+---
+- name: include iptables.yml vars
+  include_vars: iptables.yml
+  tags: iptables
+
+- name: populate service facts
+  service_facts:
+  tags: iptables
+
+- name: ensure iptables present
+  dnf:
+    name: iptables-services
+    state: present
+  when: not "'iptables' in services"
+  tags: iptables
+
+- name: copy iptables configs
+  template:
+    src: "etc/sysconfig/{{ item }}.j2"
+    dest: "/etc/sysconfig/{{ item }}"
+  with_items:
+    - iptables
+    - ip6tables
+  register: iptables
+  tags: iptables
+
+- name: disable firewalld service
+  systemd:
+    name: firewalld
+    state: stopped
+    enabled: false
+    masked: true
+  when: "'firewalld' in services"
+  tags: iptables
+
+- name: enable iptables services
+  systemd:
+    name: "{{ item.item }}"
+    enabled: true
+    state: "{{ (item.changed) | ternary('restarted', 'started') }}"
+  with_items: "{{ iptables.results }}"
+  tags: iptables

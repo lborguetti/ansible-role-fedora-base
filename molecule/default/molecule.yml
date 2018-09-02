@@ -1,0 +1,19 @@
+---
+driver:
+  name: docker
+platforms:
+  - name: instance
+    image: fedora
+    debug: true
+provisioner:
+  name: ansible
+  log: true
+docker:
+  containers:
+    - name: fedora-base
+      image: fedora/systemd-systemd
+      image_version: latest
+      privileged: true
+      volume_mounts:
+        - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      debug: true

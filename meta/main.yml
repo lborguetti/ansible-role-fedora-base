@@ -1,0 +1,16 @@
+---
+galaxy_info:
+  author: Luciano Antonio Borguetti Faustino <lborguetti at GitHub>
+  description: your description
+  company: Cultura DevOps
+  issue_tracker_url: https://github.com/lborguetti/ansible-role-fedora-base/issues
+  license: license (MIT)
+  min_ansible_version: 2.4
+  platforms:
+    - name: Fedora
+      versions:
+        - 28
+  galaxy_tags:
+    - fedora
+    - fedora-base
+    - bootstrap

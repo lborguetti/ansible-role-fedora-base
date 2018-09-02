@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-role-fedora-base
+- name: import packages.yml tasks
+  import_tasks: packages.yml
+
+- name: import iptables.yml tasks
+  import_tasks: iptables.yml
