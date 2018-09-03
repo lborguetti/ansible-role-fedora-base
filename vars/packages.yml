@@ -2,7 +2,7 @@
 # additional repositories
 repo_rpmfusion_free: "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm"
 repo_rpmfusion_nonfree: "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_version }}.noarch.rpm"
-repo_spotify_url: "http://negativo17.org/repos/fedora-spotify.repo"
+repo_spotify_url: "https://negativo17.org/repos/fedora-spotify.repo"
 
 # defaults packages to install
 packages_common:
