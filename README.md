@@ -22,11 +22,11 @@ Role Variables
 
 See the values in the vars files.
 
-Tags
-----
+Role Tags
+---------
 
-`packages`: run only packages tasks.
-`iptables`: run only iptables tasks.
+- `packages`: run only packages tasks.
+- `iptables`: run only iptables tasks.
 
 
 Dependencies

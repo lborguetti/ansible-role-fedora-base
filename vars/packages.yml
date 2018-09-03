@@ -1,4 +1,9 @@
 ---
+# additional repositories
+repo_rpmfusion_free: "https://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-{{ ansible_distribution_version }}.noarch.rpm"
+repo_rpmfusion_nonfree: "https://download1.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-{{ ansible_distribution_version }}.noarch.rpm"
+repo_spotify_url: "http://negativo17.org/repos/fedora-spotify.repo"
+
 # defaults packages to install
 packages_common:
   - "@C Development Tools and Libraries"
@@ -11,21 +16,37 @@ packages_common:
   - gimp
   - git
   - git-extras
+  - google-chrome-stable
   - google-noto-mono-fonts
+  - gstreamer1-libav
+  - gstreamer1-plugin-openh264
+  - gstreamer1-plugins-good
+  - gstreamer1-plugins-good-extras
+  - gstreamer1-plugins-ugly
+  - gstreamer1-vaapi
   - iftop
   - jq
   - keepassxc
+  - mozilla-openh264
   - ncdu
   - ngrep
   - nmap
   - nmap-ncat
+  - openh264-devel
   - pcp
   - pcp-webapi
   - ranger
   - remmina
   - remmina-plugins-rdp
   - rpmdevtools
+  - spotify
   - strace
   - sysstat
   - tcpdump
   - tig
+
+# third party packages
+package_dropbox_url: "https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2015.10.28-1.fedora.x86_64.rpm"
+package_keybase_url: "https://prerelease.keybase.io/keybase_amd64.rpm"
+package_skype_url: "https://go.skype.com/skypeforlinux-64.rpm"
+package_zoom_url: "https://zoom.us/client/latest/zoom_x86_64.rpm"
