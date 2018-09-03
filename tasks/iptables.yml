@@ -23,12 +23,19 @@
   register: iptables
   tags: iptables
 
+- name: Check if firewalld.service exists
+  stat:
+    path: /usr/lib/systemd/system/firewalld.service
+  register: firewalld
+  tags: iptables
+
 - name: disable firewalld service
   systemd:
     name: firewalld
     state: stopped
     enabled: false
     masked: true
+  when: firewalld.stat.exists
   tags: iptables
 
 - name: enable iptables services
