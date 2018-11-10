@@ -7,7 +7,7 @@ lint:
   name: yamllint
 platforms:
   - name: instance
-    image: lborguetti/fedora-systemd:28
+    image: lborguetti/fedora-systemd:29
     privileged: true
     log: true
     volumes:
