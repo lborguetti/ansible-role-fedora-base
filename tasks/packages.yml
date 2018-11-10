@@ -5,11 +5,8 @@
 
 - name: ensure install rpmfusion repositories
   dnf:
-    name: "{{ item }}"
+    name: [ "{{ repo_rpmfusion_free }}", "{{ repo_rpmfusion_nonfree }}" ]
     state: present
-  with_items:
-    - "{{ repo_rpmfusion_free }}"
-    - "{{ repo_rpmfusion_nonfree }}"
   tags: packages
 
 - name: ensure install spotify repository
@@ -29,27 +26,21 @@
 
 - name: ensure install common packages
   dnf:
-    name: "{{ item }}"
+    name: "{{ packages_common }}"
     state: present
     enablerepo:
       - fedora-cisco-openh264
       - google-chrome
-  with_items:
-    - "{{ packages_common }}"
   tags: packages
 
 - name: ensure install third party packages
   dnf:
-    name: "{{ item }}"
+    name: [ "{{ package_dropbox_url }}", "{{ package_keybase_url }}", "{{ package_skype_url }}", "{{ package_zoom_url }}" ]
     state: present
-  with_items:
-    - "{{ package_dropbox_url }}"
-    - "{{ package_keybase_url }}"
-    - "{{ package_skype_url }}"
-    - "{{ package_zoom_url }}"
   tags: packages
 
 - name: autoremove unneeded packages installed as dependencies
   dnf:
     autoremove: true
+    state: absent
   tags: packages
