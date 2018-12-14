@@ -47,6 +47,7 @@ packages_common:
   - strace
   - sysstat
   - tcpdump
+  - texlive-latex
   - tig
 
 # third party packages
