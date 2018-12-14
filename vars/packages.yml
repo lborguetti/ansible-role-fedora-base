@@ -11,6 +11,7 @@ packages_common:
   - "@RPM Development Tools"
   - dconf-editor
   - dos2unix
+  - emacs
   - f29-backgrounds-extras-gnome
   - fuse-encfs
   - gimp
