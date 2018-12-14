@@ -11,6 +11,7 @@ packages_common:
   - "@RPM Development Tools"
   - dconf-editor
   - dos2unix
+  - dropbox
   - emacs
   - f29-backgrounds-extras-gnome
   - fuse-encfs
@@ -29,6 +30,7 @@ packages_common:
   - jq
   - keepassxc
   - mozilla-openh264
+  - nautilus-dropbox
   - ncdu
   - ngrep
   - nmap
@@ -48,7 +50,6 @@ packages_common:
   - tig
 
 # third party packages
-package_dropbox_url: "https://www.dropbox.com/download?dl=packages/fedora/nautilus-dropbox-2015.10.28-9.fedora.x86_64.rpm"
 package_keybase_url: "https://prerelease.keybase.io/keybase_amd64.rpm"
 package_skype_url: "https://go.skype.com/skypeforlinux-64.rpm"
 package_zoom_url: "https://zoom.us/client/latest/zoom_x86_64.rpm"

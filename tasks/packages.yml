@@ -18,6 +18,15 @@
     mode: 0644
   tags: packages
 
+- name: ensure install dropbox repository
+  file:
+    src: "etc/yum.repos.d/dropbox.repo"
+    dest: "etc/yum.repos.d/dropbox.repo"
+    owner: root
+    group: root
+    mode: 0644
+  tags: packages
+
 - name: ensure install fedora third party repository
   dnf:
     name: fedora-workstation-repositories
@@ -35,7 +44,7 @@
 
 - name: ensure install third party packages
   dnf:
-    name: [ "{{ package_dropbox_url }}", "{{ package_keybase_url }}", "{{ package_skype_url }}", "{{ package_zoom_url }}" ]
+    name: [ "{{ package_keybase_url }}", "{{ package_skype_url }}", "{{ package_zoom_url }}" ]
     state: present
   tags: packages
 
