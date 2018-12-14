@@ -21,7 +21,7 @@
 - name: ensure install dropbox repository
   file:
     src: "etc/yum.repos.d/dropbox.repo"
-    dest: "etc/yum.repos.d/dropbox.repo"
+    dest: "/etc/yum.repos.d/dropbox.repo"
     owner: root
     group: root
     mode: 0644
