@@ -9,6 +9,7 @@ packages_common:
   - "@C Development Tools and Libraries"
   - "@Development Tools"
   - "@RPM Development Tools"
+  - cwm
   - dconf-editor
   - dos2unix
   - dropbox
@@ -38,6 +39,7 @@ packages_common:
   - openh264-devel
   - pcp
   - pcp-webapi
+  - pwgen
   - ranger
   - remmina
   - remmina-plugins-rdp
