@@ -12,5 +12,5 @@ galaxy_info:
         - 28
   galaxy_tags:
     - fedora
-    - fedora-base
+    - fedorabase
     - bootstrap
