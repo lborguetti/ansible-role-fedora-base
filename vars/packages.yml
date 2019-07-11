@@ -9,18 +9,16 @@ packages_common:
   - "@C Development Tools and Libraries"
   - "@Development Tools"
   - "@RPM Development Tools"
-  - cwm
   - dconf-editor
   - dos2unix
   - dropbox
   - emacs
-  - f29-backgrounds-extras-gnome
+  - f30-backgrounds-extras-gnome
   - fuse-encfs
   - gimp
   - git
   - git-extras
   - google-chrome-stable
-  - google-noto-mono-fonts
   - gstreamer1-libav
   - gstreamer1-plugin-openh264
   - gstreamer1-plugins-good
@@ -45,7 +43,6 @@ packages_common:
   - remmina-plugins-rdp
   - rpmdevtools
   - spotify
-  - st
   - strace
   - sysstat
   - tcpdump

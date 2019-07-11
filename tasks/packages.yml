@@ -19,7 +19,7 @@
   tags: packages
 
 - name: ensure install dropbox repository
-  file:
+  copy:
     src: "etc/yum.repos.d/dropbox.repo"
     dest: "/etc/yum.repos.d/dropbox.repo"
     owner: root
