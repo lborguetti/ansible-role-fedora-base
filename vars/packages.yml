@@ -9,6 +9,7 @@ packages_common:
   - "@C Development Tools and Libraries"
   - "@Development Tools"
   - "@RPM Development Tools"
+  - VirtualBox
   - dconf-editor
   - dos2unix
   - dropbox
@@ -18,6 +19,7 @@ packages_common:
   - gimp
   - git
   - git-extras
+  - gnome-tweaks
   - google-chrome-stable
   - gstreamer1-libav
   - gstreamer1-plugin-openh264
@@ -42,6 +44,7 @@ packages_common:
   - remmina
   - remmina-plugins-rdp
   - rpmdevtools
+  - smem
   - spotify
   - strace
   - sysstat
