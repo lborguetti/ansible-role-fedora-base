@@ -10,6 +10,7 @@ packages_common:
   - "@Development Tools"
   - "@RPM Development Tools"
   - VirtualBox
+  - bpftrace
   - dconf-editor
   - dos2unix
   - dropbox
