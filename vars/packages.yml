@@ -11,6 +11,7 @@ packages_common:
   - "@RPM Development Tools"
   - VirtualBox
   - bpftrace
+  - cloc
   - dconf-editor
   - dos2unix
   - dropbox
@@ -31,7 +32,9 @@ packages_common:
   - iftop
   - jq
   - keepassxc
+  - links
   - mozilla-openh264
+  - mypaint
   - nautilus-dropbox
   - ncdu
   - ngrep
