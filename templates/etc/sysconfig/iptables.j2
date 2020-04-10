@@ -31,10 +31,10 @@ COMMIT
 -A OUTPUT -d {{ server }} -p udp -m state --state NEW -m udp --dport 53 -j ACCEPT
 {% endfor %}
 {% for port in outbound_tcp_ports %}
--A OUTPUT -p tcp -m state --state NEW -m tcp --dport {{ port }} -j ACCEPT
+-A OUTPUT -p tcp -m state --state NEW -m tcp -m multiport --dports {{ port }} -j ACCEPT
 {% endfor %}
 {% for port in outbound_udp_ports %}
--A OUTPUT -p udp -m state --state NEW -m udp --dport {{ port }} -j ACCEPT
+-A OUTPUT -p udp -m state --state NEW -m udp -m multiport --dports {{ port }} -j ACCEPT
 {% endfor %}
 {% for network in private_networks %}
 -A OUTPUT -d {{ network }} -p tcp -m state --state NEW -m tcp --match multiport --dports 1024:35535 -j ACCEPT
