@@ -1,8 +1,8 @@
 ---
 # list of domain name servers
 dns_servers:
-  - "8.8.4.4/32"
-  - "8.8.8.8/32"
+  - "176.103.130.130/32"
+  - "176.103.130.131/32"
   - "172.16.0.1/32"
   - "169.254.169.254/32"
 
@@ -11,6 +11,7 @@ inbound_tcp_ports:
 
 outbound_udp_ports:
   - "123"
+  - "50000:65535"
 
 outbound_tcp_ports:
   - "22"
@@ -19,6 +20,7 @@ outbound_tcp_ports:
   - "843"
   - "8443"
   - "943"
+  - "8412"
 
 private_networks:
   - "10.0.0.0/8"
